@@ -1,0 +1,7 @@
+[load_balancers]
+frontend1 #ansible_host=192.0.2.200
+
+[internal:children]
+load_balancers
+app_servers
+database_servers
